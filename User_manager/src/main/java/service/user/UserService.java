@@ -87,7 +87,7 @@ public class UserService implements IUserService {
         User user = null;
         Connection connection = getConnection();
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from product where id=?");
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from user where id=?");
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {

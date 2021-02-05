@@ -17,8 +17,11 @@
         <td>${user.getName()}</td>
         <td>${user.getEmail()}</td>
         <td>${user.getCountry()}</td>
-    </tr>
+        <td><a href="/users?action=update&id=${user.getId()}">Edit</a></td>
+        <td><a href="/users?action=delete&id=${user.getId()}">Delete</a></td>
+        <tr/>
     </c:forEach>
+
 </table>
 </body>
 </html>

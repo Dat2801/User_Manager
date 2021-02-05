@@ -19,9 +19,9 @@
             <td>country</td>
         </tr>
         <tr>
-            <td>${user.getName}</td>
-            <td>${user.getEmail}</td>
-            <td>${user.getCountry}</td>
+            <td><input type="text" name="name" value="${user.getName}"></td>
+            <td><input type="text" name="email" value="${user.getEmail}"></td>
+            <td><input type="text" name="country" value="${user.getCountry}"></td>
         </tr>
     </table>
     <button type="submit">Update</button>
